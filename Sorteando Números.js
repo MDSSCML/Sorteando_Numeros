@@ -84,10 +84,11 @@
 
             let aleatorio = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
                 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50];
-            for (let index = 0; index < aleatorio.length; index++) {
-                element = Math.floor(Math.random() * aleatorio[index]);
+
+            for(aleatorios of aleatorio)
+                element = Math.floor(Math.random() * aleatorios);
                 document.getElementById("ler").innerHTML = element;
-            }
+
             para = setTimeout(sorteio, 100);
         }
         function stop() {
